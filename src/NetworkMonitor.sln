@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkMonitor", "NetworkMonitor\NetworkMonitor.csproj", "{FDA74083-1012-4BA3-84E2-DEE05507D0E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkMonitor.Test.Unit", "NetworkMonitor.Test.Unit\NetworkMonitor.Test.Unit.csproj", "{29954393-9AA0-416C-AD05-F78F9F6ADD24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDA74083-1012-4BA3-84E2-DEE05507D0E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA74083-1012-4BA3-84E2-DEE05507D0E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA74083-1012-4BA3-84E2-DEE05507D0E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA74083-1012-4BA3-84E2-DEE05507D0E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29954393-9AA0-416C-AD05-F78F9F6ADD24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29954393-9AA0-416C-AD05-F78F9F6ADD24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29954393-9AA0-416C-AD05-F78F9F6ADD24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29954393-9AA0-416C-AD05-F78F9F6ADD24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CF0BCED-47C9-4B15-B808-46CEE53421B0}
+	EndGlobalSection
+EndGlobal
