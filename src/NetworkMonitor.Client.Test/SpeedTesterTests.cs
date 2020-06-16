@@ -10,13 +10,15 @@ namespace NetworkMonitor.Test.Unit
   public class SpeedTesterTests
   {
     private BandwidthTester _speedTester;
-    private const string _fileDownloadUrl = "http://localhost:4000/download";
-    private const string _fileUploadUrl = "http://localhost:4000/upload";
-    private const string _filePath = @"C:\Users\aivarasjonikas\Documents\Development\NetworkMonitor\d\50MBTest.txt";
+    private const string _fileDownloadUrl = "";
+    private const string _fileUploadUrl = "";
+    private const string _pfileDownloadUrl = "";
+    private const string _pfileUploadUrl = "";
+    private const string _filePath = "";
 
     public SpeedTesterTests()
     {
-      _speedTester = new BandwidthTester(new HttpClient(), _fileDownloadUrl, _fileUploadUrl, _filePath);
+      _speedTester = new BandwidthTester(new HttpClient(),"", _pfileDownloadUrl, _filePath);
     }
 
 

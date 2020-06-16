@@ -18,19 +18,14 @@ namespace NetworkMonitor
     private readonly string _filePath;
     private readonly Converter _converter;
 
-    public BandwidthTester(HttpClient client, string fileDownloadUrl, string fileUploadUrl, string filePath)
+    public BandwidthTester(HttpClient client, string apiUrl, string apiSecret, string filePath)
     {
+      _converter = new Converter();
       _httpClient = client;
       _httpClient.DefaultRequestHeaders.TryAddWithoutValidation("user-agent", "other");
-      _fileDownloadUrl = fileDownloadUrl;
-      _fileUploadUrl = fileUploadUrl;
       _filePath = filePath;
-      _converter = new Converter();
-    }
-
-    public async Task RunTestsAndStoreResults()
-    {
-      var downloadSpeed = await GetDownloadSpeedMbSec();
+      _fileDownloadUrl = $"{apiUrl}/download";
+      _fileUploadUrl = $"{apiUrl}/upload?secret={apiSecret}";
     }
 
     public async Task<double> GetDownloadSpeedMbSec()
